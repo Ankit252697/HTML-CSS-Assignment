@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function CheckPassword(password) 
+{ 
+var passw=  /^[A-Za-z]\w{7,14}$/;
+if(password.value.match(passw)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Wrong...!')
+return false;
+}
+}
+</script>
+
+</head>
+<body>
+
+	<div>
+       <label> Username <input type="text" name="text1"> </label>
+    </div>
+    
+    <br><br>
+    
+	<div>
+       <label> Password <input type="password" name="password"> </label>
+    </div>
+
+    <br><br>
+
+	<div>
+		<button type="button" onclick="CheckPassword(this)"> Submit </button>
+	</div>
+
+</body>
+</html>
